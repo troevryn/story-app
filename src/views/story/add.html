@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | Story App</title>
+  </head>
+  <body>
+    <header>
+      <nav-app brandName="<%= brandName %>"></nav-app>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <div class="container py-5">
+          <form class="row g-3 shadow p-3" id="addRecordForm" novalidate>
+            <h1 class="mb-3">Tambah Story</h1>
+            <div class="col-12">
+              <textarea-with-validation
+                inputId="validationCustomNotes"
+                invalidFeedbackMessage="Wajib diisi"
+                required
+                label="Description"
+              ></textarea-with-validation>
+            </div>
+            <div class="col-12">
+              <label for="validationCustomEvidence" class="form-label"
+                >Bukti tagihan</label
+              >
+              <input
+                type="file"
+                class="form-control"
+                id="validationCustomEvidence"
+                accept="image/*"
+                required
+              />
+              <div class="invalid-feedback">Wajib diisi</div>
+            </div>
+
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="main-footer bg-dark">
+        <footer-app></footer-app>
+      </div>
+    </footer>
+  </body>
+</html>

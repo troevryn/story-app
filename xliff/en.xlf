@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<file target-language="en" source-language="id" original="lit-localize-inputs" datatype="plaintext">
+<body>
+<trans-unit id="sf9a862bfd829397e">
+  <source>Dasbor</source>
+  <target>Dashboard</target>
+</trans-unit>
+<trans-unit id="s8d9d6501de2bbd98">
+  <source>Tambah Data</source>
+  <target>Add Data</target>
+</trans-unit>
+<trans-unit id="s229fb4df9ecf3ed1">
+  <source>Keluar</source>
+  <target>Logout</target>
+</trans-unit>
+<trans-unit id="sa352675d34c960bf">
+  <source>Dibuat dengan ❤ oleh Robby</source>
+  <target>created by ❤ oleh robby</target>
+</trans-unit>
+<trans-unit id="s02b1df68b12ac3ab">
+  <source>layangkan saya</source>
+  <target>hover me</target>
+  
+</trans-unit>
+<trans-unit id="s0cdb6b5e0e4dc4af">
+  <source>tinggalkan card</source>
+  <target>leave me</target>
+
+</trans-unit>
+</body>
+</file>
+</xliff>
