@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title><%= htmlWebpackPlugin.options.title %> | Story App</title>
+    <title><%= htmlWebpackPlugin.options.title %> | StoryApp</title>
   </head>
   <body>
     <header>
@@ -25,7 +25,7 @@
             </div>
             <div class="col-12">
               <label for="validationCustomEvidence" class="form-label"
-                >Bukti tagihan</label
+                >Gambar</label
               >
               <input
                 type="file"
@@ -38,7 +38,11 @@
             </div>
 
             <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit</button>
+              <button id="btn-submit" class="btn btn-primary" type="submit">Submit</button>
+                <button id="btn-loading" class="btn btn-primary d-none" type="button" disabled>
+                  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
             </div>
           </form>
         </div>

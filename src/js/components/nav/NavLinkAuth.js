@@ -1,14 +1,20 @@
-import LitWithoutShadowDom from './base';
+import LitWithoutShadowDom from '../base';
 import { html } from 'lit';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
- 
+import Utils from '../../utils/utils';
+
 class NavLinkAuth extends LitWithoutShadowDom {
-  constructor() {
+  constructor () {
     super();
     updateWhenLocaleChanges(this);
   }
- 
-  render() {
+
+  _clearStorage () {
+    Utils.destroyAllToken();
+    window.location.href = '/auth/login.html';
+  }
+
+  render () {
     return html`
       <li class="nav-item dropdown">
         <a
@@ -30,13 +36,19 @@ class NavLinkAuth extends LitWithoutShadowDom {
           <span id="nameUserLogged"></span>
         </a>
         <ul class="dropdown-menu">
-          <a class="dropdown-item" id="userLogOut">
-            ${msg(`Keluar`)}
-          </a>
+          <a class="dropdown-item" href="/profile.html"> profile </a>
+          <li
+            class="dropdown-item cursor-pointer"
+            id="userLogOut"
+            @click=${() => this._clearStorage()}
+          >
+            ${msg('Keluar')}
+          </li>
         </ul>
       </li>
     `;
   }
 }
- 
+
+// eslint-disable-next-line no-undef
 customElements.define('nav-link-auth', NavLinkAuth);

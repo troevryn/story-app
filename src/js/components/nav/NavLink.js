@@ -1,24 +1,24 @@
 import { html } from 'lit';
-import LitWithoutShadowDom from './base';
- 
+import LitWithoutShadowDom from '../base';
+
 class NavLink extends LitWithoutShadowDom {
   static properties = {
     content: { type: String, reflect: true },
-    to: { type: String, reflect: true },
+    to: { type: String, reflect: true }
   };
- 
-  constructor() {
+
+  constructor () {
     super();
-    this._checkAvailabilityProperty()
+    this._checkAvailabilityProperty();
   }
- 
-  _checkAvailabilityProperty() {
+
+  _checkAvailabilityProperty () {
     if (!this.hasAttribute('to')) {
       throw new Error(`Atribut "to" harus diterapkan pada elemen ${this.localName}`);
     }
   }
- 
-  render() {
+
+  render () {
     return html`
       <li class="nav-item">
         <a class="nav-link" href="${this.to}">${this.content}</a>
@@ -26,5 +26,6 @@ class NavLink extends LitWithoutShadowDom {
     `;
   }
 }
- 
+
+// eslint-disable-next-line no-undef
 customElements.define('nav-link', NavLink);

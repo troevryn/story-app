@@ -1,23 +1,24 @@
+/* eslint-disable no-undef */
 import { html } from 'lit';
-import LitWithoutShadowDom from './base';
- 
+import LitWithoutShadowDom from '../base';
+
 class NavApp extends LitWithoutShadowDom {
   static properties = {
-    brandName: { type: String, reflect: true },
+    brandName: { type: String, reflect: true }
   };
- 
-  constructor() {
+
+  constructor () {
     super();
-    this._checkAvailabilityProperty()
+    this._checkAvailabilityProperty();
   }
- 
-  _checkAvailabilityProperty() {
+
+  _checkAvailabilityProperty () {
     if (!this.hasAttribute('brandName')) {
       throw new Error(`Atribut "brandName" harus diterapkan pada elemen ${this.localName}`);
     }
   }
- 
-  render() {
+
+  render () {
     return html`
       <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <div class="container">
@@ -38,5 +39,5 @@ class NavApp extends LitWithoutShadowDom {
     `;
   }
 }
- 
+
 customElements.define('nav-app', NavApp);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkstory_app=self.webpackChunkstory_app||[]).push([[571],{571:(e,a,b)=>{b.r(a),b.d(a,{templates:()=>d});var d={s02b1df68b12ac3ab:"hover me",s0cdb6b5e0e4dc4af:"leave me",s229fb4df9ecf3ed1:"Logout",s8d9d6501de2bbd98:"Add Data",sa352675d34c960bf:"created by ❤ oleh robby",sf9a862bfd829397e:"Dashboard"}}}]);

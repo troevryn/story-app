@@ -1,5 +1,6 @@
-import { html, nothing } from "lit";
-import LitWithoutShadowDom from "../base";
+/* eslint-disable no-undef */
+import { html, nothing } from 'lit';
+import LitWithoutShadowDom from '../base';
 
 class TextareaWithValidation extends LitWithoutShadowDom {
   static properties = {
@@ -11,27 +12,27 @@ class TextareaWithValidation extends LitWithoutShadowDom {
     validFeedbackMessage: { type: String, reflect: true },
     invalidFeedbackMessage: { type: String, reflect: true },
 
-    required: { type: Boolean, reflect: true },
+    required: { type: Boolean, reflect: true }
   };
 
-  constructor() {
+  constructor () {
     super();
     this._checkAvailabilityProperty();
 
     this.rows = 3;
     this.required = false;
-    this.label = "";
+    this.label = '';
   }
 
-  _checkAvailabilityProperty() {
-    if (!this.hasAttribute("invalidFeedbackMessage")) {
+  _checkAvailabilityProperty () {
+    if (!this.hasAttribute('invalidFeedbackMessage')) {
       throw new Error(
         `Atribut "invalidFeedbackMessage" harus diterapkan pada elemen ${this.localName}`
       );
     }
   }
 
-  render() {
+  render () {
     return html`
       <label for="validationCustomNotes" class="form-label"
         >${this.label}</label
@@ -50,7 +51,7 @@ class TextareaWithValidation extends LitWithoutShadowDom {
     `;
   }
 
-  _validFeedbackTemplate() {
+  _validFeedbackTemplate () {
     if (this.validFeedbackMessage) {
       return html`
         <div class="valid-feedback">${this.validFeedbackMessage}</div>
@@ -61,4 +62,4 @@ class TextareaWithValidation extends LitWithoutShadowDom {
   }
 }
 
-customElements.define("textarea-with-validation", TextareaWithValidation);
+customElements.define('textarea-with-validation', TextareaWithValidation);

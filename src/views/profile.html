@@ -3,48 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title><%= htmlWebpackPlugin.options.title %> | Money Tracker App</title>
+    <title><%= htmlWebpackPlugin.options.title %> | StoryApp</title>
   </head>
   <body id="profile">
     <header>
-   
-        <nav-app brandName="<%= brandName %>"></nav-app>
-      </header>
+      <nav-app brandName="<%= brandName %>"></nav-app>
+    </header>
 
-	  <main id="container">
-		<div id="content">
-			<article>
-				<h3>My Skill</h3>
-				<div id="myskill" class="content-grid"></div>
-			</article>
-			<article>
-				<h3>My Project</h3>
-				<div id="myproject" class="content-grid"></div>
-			</article>
-			<article>
-				<h3>My Experience</h3>
-				<div id="myexperience" class="experience"></div>
-			</article>
-		</div>
-		<aside>
-			<img
-				class="profile-image"
-				src="/image/profile.jpg"
-				width="100px"
-				alt=""
-			/>
-			<p><span class="ket">Name</span> Robby</p>
-			<p><span class="ket">Address</span> Sumatra utara, Deli Serdang</p>
-		</aside>
-	</main>
+    <main id="container">
+      <div id="content">
+        <article>
+          <h3>My Skill</h3>
+          <div id="myskill" class="content-grid"></div>
+        </article>
+        <article>
+          <h3>My Project</h3>
+          <div id="myproject" class="content-grid"></div>
+        </article>
+        <article>
+          <h3>My Experience</h3>
+          <div id="myexperience" class="experience"></div>
+        </article>
+      </div>
+      <aside>
+        <img
+          class="profile-image"
+          src="/image/profile.jpg"
+          width="100px"
+          alt=""
+        />
+        <p><span class="ket">Name</span> Robby</p>
+        <p><span class="ket">Address</span> Sumatra utara, Deli Serdang</p>
+      </aside>
+    </main>
 
     <footer>
       <div class="main-footer bg-dark">
-     
         <footer-app></footer-app>
       </div>
     </footer>
-
-   
   </body>
 </html>

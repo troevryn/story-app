@@ -1,12 +1,12 @@
-import LitWithoutShadowDom from "./base";
-import { LitElement, css, html } from "lit";
-import { msg, updateWhenLocaleChanges } from "@lit/localize";
+import { LitElement, css, html } from 'lit';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 class FooterApp extends LitElement {
-  constructor() {
+  constructor () {
     super();
     updateWhenLocaleChanges(this);
   }
+
   static styles = [
     css`
       .footer {
@@ -15,18 +15,19 @@ class FooterApp extends LitElement {
         color: white;
         text-align: center;
       }
-    `,
+    `
   ];
 
-  render() {
+  render () {
     return html`
       <div class="footer">
         <locale-picker class="d-block mb-3"></locale-picker>
 
-        <p>${msg(`Dibuat dengan ❤ oleh Robby`)}</p>
+        <p>${msg('Dibuat dengan ❤ oleh Robby')}</p>
       </div>
     `;
   }
 }
 
-customElements.define("footer-app", FooterApp);
+// eslint-disable-next-line no-undef
+customElements.define('footer-app', FooterApp);

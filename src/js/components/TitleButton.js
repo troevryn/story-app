@@ -1,23 +1,21 @@
-import { LitElement, html, css } from "lit";
-import LitWithoutShadowDom from "./base";
+/* eslint-disable no-undef */
+import { html } from 'lit';
+import LitWithoutShadowDom from './base';
 
 class TitleButton extends LitWithoutShadowDom {
   static properties = {
     title: { type: String, reflect: true },
-    labelButton: { type: String, reflect: true },   
+    labelButton: { type: String, reflect: true }
   };
-  constructor() {
+
+  constructor () {
     super();
 
-    this.title = "";
-    this.labelButton = "";
-   
-
+    this.title = '';
+    this.labelButton = '';
   }
- 
- 
 
-  render() {
+  render () {
     return html`
     <div class="d-flex justify-content-between align-items-center">
     <h1>${this.title}</h1>
@@ -28,4 +26,4 @@ class TitleButton extends LitWithoutShadowDom {
     `;
   }
 }
-customElements.define("title-button", TitleButton);
+customElements.define('title-button', TitleButton);

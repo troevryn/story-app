@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkstory_app=self.webpackChunkstory_app||[]).push([[60],{60:(e,s,a)=>{a.r(s),a.d(s,{templates:()=>b});var b={s02b1df68b12ac3ab:"Leg mich hin",s0cdb6b5e0e4dc4af:"Karten hinterlassen",s229fb4df9ecf3ed1:"hinausgehen",s8d9d6501de2bbd98:"Daten hinzufügen",sa352675d34c960bf:"Hergestellt mit ❤ von Robby",sf9a862bfd829397e:"Dashboards"}}}]);

@@ -1,5 +1,6 @@
-import { LitElement, html, css } from "lit";
-import { msg, updateWhenLocaleChanges } from '@lit/localize';
+/* eslint-disable no-undef */
+import { LitElement, html, css } from 'lit';
+import { msg } from '@lit/localize';
 
 class CardStory extends LitElement {
   static properties = {
@@ -7,19 +8,19 @@ class CardStory extends LitElement {
     description: { type: String, reflect: true },
     img: { type: String, reflect: true },
     date: { type: String, reflect: true },
-    classes: { type: String, reflect: true },
+    classes: { type: String, reflect: true }
   };
-  constructor() {
+
+  constructor () {
     super();
 
-    this.name = "";
-    this.description = "";
-    this.classes = "";
-    this.img = "";
-    this.date = "";
-
+    this.name = '';
+    this.description = '';
+    this.classes = '';
+    this.img = '';
+    this.date = '';
   }
- 
+
   static styles = [
     css`
       .flip-card {
@@ -110,10 +111,10 @@ class CardStory extends LitElement {
         z-index: 1;
         border-radius: 1rem;
       }
-    `,
+    `
   ];
 
-  render() {
+  render () {
     return html`
       <div class="flip-card">
         <div class="flip-card-inner">
@@ -134,4 +135,4 @@ class CardStory extends LitElement {
     `;
   }
 }
-customElements.define("card-story", CardStory);
+customElements.define('card-story', CardStory);

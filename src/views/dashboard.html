@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title><%= htmlWebpackPlugin.options.title %> | Money Tracker App</title>
+    <title><%= htmlWebpackPlugin.options.title %> | StoryApp</title>
   </head>
   <body>
     <header>
@@ -22,7 +22,11 @@
           <!-- Records -->
           <div>
             <title-button title="List Story" labelButton="Add Story"></title-button>
-
+            <div id="card-loading" class="d-none justify-content-center">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
             <div id="list-story" >
 
             </div>

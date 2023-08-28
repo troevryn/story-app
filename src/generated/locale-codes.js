@@ -4,24 +4,24 @@
 /**
  * The locale code that templates in this source code are written in.
  */
-export const sourceLocale = `id`;
+export const sourceLocale = 'id';
 
 /**
  * The other locale codes that this application is localized into. Sorted
  * lexicographically.
  */
 export const targetLocales = [
-  `de`,
-  `eg`,
-  `en`,
+  'de',
+  'eg',
+  'en'
 ];
 
 /**
  * All valid project locale codes. Sorted lexicographically.
  */
 export const allLocales = [
-  `de`,
-  `eg`,
-  `en`,
-  `id`,
+  'de',
+  'eg',
+  'en',
+  'id'
 ];
